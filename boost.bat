@@ -7,11 +7,12 @@ b2 headers
 
 rem add 'call :link XX.X' if you need to run for specific version of Visual C++ compiler.
 
-call :link 14.0
-call :link 12.0
-call :link 11.0
-call :link 10.0
-call :link 9.0
+call :link 14.2
+rem call :link 14.0
+rem add call :link 12.0
+rem add call :link 11.0
+rem add call :link 10.0
+rem add call :link 9.0
 
 goto :eof
 
@@ -54,5 +55,5 @@ echo threading=%4
 echo address-model=%5
 echo }
 rem change this line if you need to specify additional options to compiler.
-b2 architecture=x86 link=%2 runtime-link=%3 threading=%4 address-model=%5 stage --stagedir=address-model-%5 --toolset=msvc-%1 --without-python
+b2 architecture=x86 cxxstd=17 link=%2 runtime-link=%3 threading=%4 address-model=%5 stage --stagedir=address-model-%5 --toolset=msvc-%1 --without-python
 goto :eof

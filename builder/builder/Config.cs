@@ -40,7 +40,8 @@ namespace builder
             { "vc110", new CompilerInfo("Visual Studio 2012 Update 4") },
             { "vc120", new CompilerInfo("Visual Studio 2013 Update 5") },
             { "vc140", new CompilerInfo("Visual Studio 2015 Update 3") },
-            { "vc141", new CompilerInfo("Visual Studio 2017 15.9.8") }
+            { "vc141", new CompilerInfo("Visual Studio 2017 15.9.8") },
+            { "vc142", new CompilerInfo("Visual Studio 2019 16.0.3") }
         };
 
         public static int CompilerNumber(string key)
